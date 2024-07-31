@@ -1,4 +1,7 @@
-﻿namespace banking_app
+﻿using banking_app;
+using System;
+
+namespace BankingAppConsole
 {
     public class Transferencia
     {

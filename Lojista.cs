@@ -1,4 +1,6 @@
-﻿namespace banking_app
+﻿using banking_app;
+
+namespace BankingAppConsole
 {
     public class Lojista : Usuario
     {
@@ -8,6 +10,6 @@
         public override void ReceberTransferencia(decimal valor)
         {
             Saldo += valor;
-        }
+        }   
     }
 }

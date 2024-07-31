@@ -1,8 +1,9 @@
-﻿using System;
+﻿using banking_app;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace banking_app
+namespace BankingAppConsole
 {
     public class SistemaBancario
     {
@@ -33,5 +34,21 @@ namespace banking_app
             var transferencia = new Transferencia(remetente, destinatario, valor);
             // Registrar a transferência no histórico se necessário
         }
+
+        public Usuario BuscarUsuarioPorEmail(string email)
+        {
+            return usuarios.FirstOrDefault(u => u.Email == email);
+        }
+
+        public void MostrarSaldo(Usuario usuario)
+        {
+            Console.WriteLine($"Saldo do {usuario.NomeCompleto}: {usuario.Saldo}");
+        }
+
+        public void AdicionarSaldo(Usuario usuario, decimal valor)
+        {
+            usuario.Saldo += valor;
+        }
     }
 }
+    

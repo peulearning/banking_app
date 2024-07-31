@@ -1,4 +1,6 @@
-﻿namespace banking_app
+﻿using banking_app;
+
+namespace BankingAppConsole
 {
     public class UsuarioComum : Usuario
     {
